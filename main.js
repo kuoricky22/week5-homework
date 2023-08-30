@@ -1,6 +1,6 @@
 import './assets/scss/all.scss';
-
-let current_page = window.location.href.split('/')[5].slice(0, window.location.href.split('/')[5].indexOf('.'));
+let urlArray = window.location.href.split('/');
+let current_page = urlArray[urlArray.length - 1].slice(0, urlArray[urlArray.length - 1].indexOf('.'));
 let navbar_links = document.getElementsByClassName('nav-link');
 
 
