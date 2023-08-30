@@ -5,15 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <div class="d-flex">
+      <%- include('./layout/sidemenu'); -%>
+      <div class="w-100 m-32">
+        <div class="header d-flex justify-content-between pb-32 px-2">
+          <div class="feature d-flex align-items-center">
+            <h1 class="title">Admin</h1>
+            <a class="add d-flex align-items-center" href="#"
+              ><span class="material-icons icon-large"> add </span> Add New
+              Admin
+            </a>
+          </div>
+          <div class="function d-flex">
+            <a class="" href="#"
+              ><span class="material-icons icon-large me-4"> search </span>
+            </a>
+            <a href="#"
+              ><span class="material-icons icon-large">
+                notifications_active
+              </span>
+            </a>
+          </div>
+        </div>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">
+                ID<span class="material-icons icon-normal">
+                  arrow_downward
+                </span>
+              </th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Verified</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#1</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#2</td>
+              <td>Zaina Goldsmith</td>
+              <td>zaina.goldsmith@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#3</td>
+              <td>Mahima Lopez</td>
+              <td>mahima.lopez@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#4</td>
+              <td>Pharrell Murray</td>
+              <td>pharrell.murray@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#5</td>
+              <td>Annika Mcbride</td>
+              <td>annika.mcbride@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#6</td>
+              <td>Fatimah Clark</td>
+              <td>fatimah.clark@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#7</td>
+              <td>Klaudia Rhodes</td>
+              <td>klaudia.rhodes@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#8</td>
+              <td>Tillie Lucero</td>
+              <td>tillie.lucero@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#9</td>
+              <td>Sabrina Stephenson</td>
+              <td>sabrina.stephenson@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#10</td>
+              <td>Annie Smith</td>
+              <td>annie.smith@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end mb-0">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span class="material-icons"> chevron_left </span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span class="material-icons"> navigate_next </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
-    <%- include('./layout/footer'); -%>
-
+    <%- include('./layout/modal'); -%>
     <script type="module" src="../main.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

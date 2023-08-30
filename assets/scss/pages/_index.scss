@@ -1,3 +1,88 @@
-.index-title {
-  font-size: 100px;
+.header {
+  .feature {
+    .title {
+      margin-right: 48px;
+      font-size: $font-size-5;
+      font-weight: bold;
+    }
+    .add {
+      color: $gray-900;
+      text-decoration: none;
+      font-weight: bold;
+      .material-icons {
+        color: $success;
+        margin-right: 8px;
+      }
+    }
+    .add:hover {
+      color: $success;
+    }
+  }
+  .function {
+    a {
+      color: $gray-900;
+    }
+  }
+}
+
+.table {
+  color: $gray-900;
+  margin-bottom: 63px;
+  thead {
+    tr {
+      th {
+        padding-bottom: 4px;
+        .material-icons {
+          color: $success;
+          margin-left: 4px;
+          vertical-align: sub;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      cursor: pointer;
+      td {
+        padding-top: 19px;
+        padding-bottom: 17px;
+      }
+    }
+  }
+  :not(caption) {
+    * {
+      padding: 0;
+    }
+  }
+}
+.page-item:first-child,
+.page-item:last-child {
+  .page-link {
+    color: $success;
+    padding: 4px 4px 0px 4px;
+  }
+}
+.page-item:first-child {
+  .page-link {
+    border-radius: 2px 0 0 2px;
+  }
+}
+.page-item:last-child {
+  .page-link {
+    border-radius: 0 2px 2px 0;
+  }
+}
+.page-item {
+  .page-link {
+    color: $gray-900;
+    padding-top: 4px;
+    border: 1px solid $success;
+  }
+  .page-link:hover {
+    z-index: 2;
+    color: #ffffff;
+    background-color: $success;
+    border-color: $success;
+  }
 }

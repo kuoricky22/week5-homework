@@ -1,0 +1,96 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="formDataModal"
+  tabindex="-1"
+  aria-labelledby="formDataModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="formDataModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="adminModal"
+  tabindex="-1"
+  aria-labelledby="adminModalModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body px-32">
+        <div class="admin d-flex">
+          <div class="admin-img">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emir.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="admin-content">
+            <div class="admin-Id d-flex justify-content-between">
+              <p>#1</p>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="admin-infor">
+              <p>Admin</p>
+              <p class="name">Emir Wicks</p>
+              <a href="mailto:emir.wicks@mail.com">emir.wicks@mail.com</a>
+            </div>
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header collapsed" id="headingOne">
+                  <button
+                    class="accordion-button w-100 d-flex justify-content-between"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <span class="button-name">Verified</span>
+                    <span class="material-icons"> expand_more </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="btn btn-outline-danger btn-normal-size">
+                    Deactivate
+                  </div>
+                  <div class="btn btn-success btn-normal-size">Edit</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

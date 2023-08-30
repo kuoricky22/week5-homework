@@ -1,5 +1,13 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
 
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
 
-@import './pages/index.scss';
+@import "./variable";
+@import "./base";
+@import "./util";
+
+@import "./layout/sidemenu";
+@import "./layout/modal";
+
+@import "./pages/index";
+@import "./pages/assignment";

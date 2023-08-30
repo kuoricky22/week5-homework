@@ -1,0 +1,68 @@
+.modal-content {
+  padding: 32px 9px;
+  .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.admin {
+  color: $gray-900;
+  .admin-img {
+    width: 141px;
+    margin-right: 24px;
+    img {
+      width: 141px;
+      height: 141px;
+      object-fit: cover;
+    }
+  }
+  .admin-content {
+    width: 253px;
+    .admin-infor {
+      margin-bottom: 9px;
+      .name {
+        font-size: $font-size-5;
+      }
+      a {
+        color: $gray-600;
+        font-size: $font-size-2;
+      }
+    }
+    .accordion-item {
+      .accordion-button {
+        padding: 0;
+        .button-name {
+          padding: 4px 8px;
+          font-size: $font-size-2;
+          background-color: $gray-100;
+        }
+        .material-icons {
+          color: $success;
+        }
+      }
+      .accordion-button:not(.collapsed) {
+        color: $gray-900;
+        background-color: #ffffff;
+        box-shadow: none;
+      }
+      .accordion-collapse {
+        margin-top: 36px;
+        .btn {
+          font-size: $font-size-3;
+          font-weight: bold;
+          border-radius: 2px;
+        }
+        .btn-normal-size {
+          padding: 5px 32px;
+        }
+        .btn:first-child {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.accordion-button::after {
+  content: none;
+}
