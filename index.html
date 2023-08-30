@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/week5-homework/assets/main-920f9dd0.js"></script>
+    <link rel="stylesheet" href="/week5-homework/assets/main-a4c1a6b9.css">
+  </head>
+  <body>
+    <div class="d-flex">
+      <nav
+  class="navbar navbar-expand-lg navbar-light bg-light flex-column justify-content-between py-32"
+>
+  <div class="container-fluid p-0 flex-column align-items-start">
+    <a class="navbar-brand pl-32 pb-32 pt-0" href="index.html">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg"
+        alt=""
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex align-items-center"
+            aria-current="page"
+            href="#"
+            ><span class="material-icons mr-16"> assessment </span>Dashboard</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#"
+            ><span class="material-icons mr-16"> question_answer </span
+            >Question</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="assignment.html"
+            ><span class="material-icons mr-16"> assignment </span>Assignment</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#"
+            ><span class="material-icons mr-16"> video_library </span>Course</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center active" href="index.html"
+            ><span class="material-icons mr-16"> people </span>Admin</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#"
+            ><span class="material-icons mr-16"> settings </span>Settings</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="user d-flex align-items-center pl-32">
+    <div class="user-img mr-16">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="user-infor">
+      <p class="user-name mb-0">Andy Chen</p>
+      <a href="mailto:andy0401@mail.com" class="user-email"
+        >andy0401@mail.com</a
+      >
+    </div>
+  </div>
+</nav>
+      <div class="w-100 m-32">
+        <div class="header d-flex justify-content-between pb-32 px-2">
+          <div class="feature d-flex align-items-center">
+            <h1 class="title">Admin</h1>
+            <a class="add d-flex align-items-center" href="#"
+              ><span class="material-icons icon-large"> add </span> Add New
+              Admin
+            </a>
+          </div>
+          <div class="function d-flex">
+            <a class="" href="#"
+              ><span class="material-icons icon-large me-4"> search </span>
+            </a>
+            <a href="#"
+              ><span class="material-icons icon-large">
+                notifications_active
+              </span>
+            </a>
+          </div>
+        </div>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">
+                ID<span class="material-icons icon-normal">
+                  arrow_downward
+                </span>
+              </th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Verified</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#1</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#2</td>
+              <td>Zaina Goldsmith</td>
+              <td>zaina.goldsmith@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#3</td>
+              <td>Mahima Lopez</td>
+              <td>mahima.lopez@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#4</td>
+              <td>Pharrell Murray</td>
+              <td>pharrell.murray@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#5</td>
+              <td>Annika Mcbride</td>
+              <td>annika.mcbride@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#6</td>
+              <td>Fatimah Clark</td>
+              <td>fatimah.clark@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#7</td>
+              <td>Klaudia Rhodes</td>
+              <td>klaudia.rhodes@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#8</td>
+              <td>Tillie Lucero</td>
+              <td>tillie.lucero@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#9</td>
+              <td>Sabrina Stephenson</td>
+              <td>sabrina.stephenson@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#adminModal">
+              <td scope="row">#10</td>
+              <td>Annie Smith</td>
+              <td>annie.smith@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <span class="material-icons me-4"> visibility </span
+                ><span class="material-icons"> mode_edit </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end mb-0">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span class="material-icons"> chevron_left </span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span class="material-icons"> navigate_next </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Modal -->
+<div
+  class="modal fade"
+  id="formDataModal"
+  tabindex="-1"
+  aria-labelledby="formDataModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="formDataModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="adminModal"
+  tabindex="-1"
+  aria-labelledby="adminModalModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body px-32">
+        <div class="admin d-flex">
+          <div class="admin-img">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emir.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="admin-content">
+            <div class="admin-Id d-flex justify-content-between">
+              <p>#1</p>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="admin-infor">
+              <p>Admin</p>
+              <p class="name">Emir Wicks</p>
+              <a href="mailto:emir.wicks@mail.com">emir.wicks@mail.com</a>
+            </div>
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header collapsed" id="headingOne">
+                  <button
+                    class="accordion-button w-100 d-flex justify-content-between"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <span class="button-name">Verified</span>
+                    <span class="material-icons"> expand_more </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="btn btn-outline-danger btn-normal-size">
+                    Deactivate
+                  </div>
+                  <div class="btn btn-success btn-normal-size">Edit</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
